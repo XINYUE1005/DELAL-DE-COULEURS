@@ -1,3 +1,6 @@
 # DELAI DE COULEURS
 
-Le projet universitaire "publier des contenues en ligne"
+Univercity project "publier des contenues en ligne"
+
+Written in html and css
+
