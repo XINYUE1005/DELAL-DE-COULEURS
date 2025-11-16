@@ -1,6 +1,6 @@
-# DELAI DE COULEURS
+# DELAL DE COULEURS
 
-Univercity project "publier des contenues en ligne"
+University project "Publier des contenus en ligne"
 
 Written in html and css
 
