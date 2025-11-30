@@ -22,14 +22,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand fw-semibold tracking" style="color:white" href="#">DELAL DES COULEURS</a>
-      <button class="btn btn-link ms-auto d-lg-none p-0" aria-label="Recherche"><img src="icons/Search.svg"/></button>
  
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto gap-lg-4">
           <li class="nav-item"><a class="nav-link" href="#boutique">BOUTIQUE</a></li>
-          <li class="nav-item"><a class="nav-link" href="#artists">ARTISTES</a></li>
-          <li class="nav-item"><a class="nav-link" href="#expositions">EXPOSITIONS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/artistes_page.html">ARTISTES</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/info_page.html">EXPOSITIONS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/contact_page.html">CONTACT</a></li>
         </ul>
         <button class="btn btn-link ms-lg-3 d-none d-lg-inline p-0" aria-label="Recherche"><img src="icons/Search.svg"/></button>
       </div>
@@ -84,7 +83,7 @@
           <!-- 第二行 -->
           <div class="col-12 col-md-4">
             <figure class="thumb">
-              <img class="img-fluid rounded" src="photos/europeana-smw6kSH7O6o-unsplash 1.png" alt="Serge Poliakoff — Structures rouges">
+              <img class="img-fluid rounded" src="photos/fons-heijnsbroek-8fGOAAKGDCM-unsplash 1.png" alt="Serge Poliakoff — Structures rouges">
               <figcaption class="legend">
                 <strong>Serge Poliakoff</strong><br>
                 <em>Structures rouges</em>
@@ -102,10 +101,10 @@
           </div>
           <div class="col-12 col-md-4">
             <figure class="thumb">
-              <img class="img-fluid rounded" src="photos/europeana-zdiXBovPPRI-unsplash 1.png" alt="Pablo Picasso — Scène d’atelier">
+              <img class="img-fluid rounded" src="photos/europeana-smw6kSH7O6o-unsplash 1.png" alt="Pablo Picasso — Scène d’atelier">
               <figcaption class="legend">
                 <strong>Pablo Picasso</strong><br>
-                <em>Scène d’atelier</em>
+                <em>Scène d'atelier</em>
               </figcaption>
             </figure>
           </div>
@@ -119,32 +118,41 @@
 
     <!-- Artistes -->
     <section id="artists" class="py-5 border-top">
-      <div class="container-xxl">
-        <h2 class="section-title text-center mb-4">NOS ARTISTES</h2>
-        <div class="row g-4 align-items-center">
-          <div class="col-6 col-md-3 text-center">
-            <img class="img-fluid rounded" src="photos/image 32.png" alt="Atelier d'artiste">
-          </div>
-          <div class="col-6 col-md-2 text-center"><p class="artist-name m-0">Pascin</p></div>
-          <div class="col-6 col-md-2 text-center">
-            <img class="img-fluid rounded" src="photos/image 39.png" alt="Œuvre abstraite rouge">
-          </div>
-          <div class="col-6 col-md-2 text-center"><p class="artist-name m-0">Schiele</p></div>
-          <div class="col-6 col-md-3 text-center">
-            <img class="img-fluid rounded" src="photos/image 33.png" alt="Portrait noir et blanc">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">NOS ARTISTES</h2>
+
+        <div class="row justify-content-center g-4">
+
+          <!-- 1 -->
+          <div class="col-10 col-md-4">
+            <img src="photos/image 32.png" class="img-fluid rounded artistes" alt="Atelier d’artiste">
+            <p class="artist-name mt-2">Pascin</p>
           </div>
 
-          <div class="col-6 col-md-3 text-center"><p class="artist-name m-0">Modigliani</p></div>
-          <div class="col-6 col-md-2 text-center"><p class="artist-name m-0">Chagall</p></div>
-          <div class="col-6 col-md-2 text-center">
-            <img class="img-fluid rounded" src="photos/image portrait.png" alt="Portrait expressionniste bleu">
+          <!-- 2 -->
+          <div class="col-10 col-md-4">
+            <img src="photos/image 39.png" class="img-fluid rounded artistes" alt="Œuvre abstraite rouge">
+            <p class="artist-name mt-2">Schiele</p>
           </div>
-          <div class="col-12 text-center">
-            <a class="btn btn-rose mt-2" href="#expositions">Découvrir</a>
+
+          <!-- 3 -->
+          <div class="col-10 col-md-4">
+            <img src="photos/image 33.png" class="img-fluid rounded artistes" alt="Portrait noir et blanc">
+            <p class="artist-name mt-2">Modigliani</p>
           </div>
+
+          <!-- 4 -->
+          <div class="col-10 col-md-4">
+            <img src="photos/image portrait.png" class="img-fluid rounded artistes" alt="Portrait expressionniste bleu">
+            <p class="artist-name mt-2">Chagall</p>
+          </div>
+
         </div>
+
+        <a class="btn btn-rose mt-4" href="./html/artistes_page.html">Découvrir</a>
       </div>
     </section>
+
 
     <!-- Expositions -->
     <section id="expositions" class="py-5 border-top">

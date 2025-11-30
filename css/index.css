@@ -42,7 +42,32 @@ header{position:sticky;top:0;z-index:1030;}
 .expo-caption{font-size:.95rem}
 
 /* Cards / grids */
-img.rounded{border-radius:8px}
+img.rounded{border: radius 8px;
+  margin-left: 65px;
+}
+/* 让艺术家图片大小更统一 */
+.artistes {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+}
+
+/* 名字排版 */
+.artist-name {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+/* 整体排版：内容完全居中 */
+#artists .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px;
+}
 
 /* CTA */
 .btn-rose{background:var(--rose);color:#fff;border-radius:8px;padding:.5rem 1.25rem}
