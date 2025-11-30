@@ -1,0 +1,381 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Гарантируем, что html и body занимают всю высоту */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #4A1F1F;
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; /* Позволяет футеру прикрепляться ко дну */
+}
+
+.header {
+    background-color: #6a2e2e; /* Цвет, похожий на скриншот */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon,
+.search-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.artist-section {
+    padding: 60px 0;
+    background-color: #f9f7f4; /* Цвет фона, похожий на скриншот */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #6a2e2e; /* Цвет текста, похожий на скриншот */
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.artist-card {
+    margin-top: 30px;
+}
+
+.artist-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist-name {
+    font-size: 20px;
+    color: #6a2e2e; /* Цвет текста, похожий на скриншот */
+    margin-top: 20px;
+}
+
+.artist-description {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #4a1f1f; /* Цвет текста, похожий на скриншот */
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 800px; /* Ограничиваем ширину для лучшей читаемости */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artist-description p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f9f7f4;
+    padding: 0 20px;
+    text-align: center;
+    color: #4a1f1f;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: auto; /* Прикрепляет футер ко дну */
+}
+
+.footer-stripe {
+    height: 1px;
+    background-color: #4a1f1f; /* Цвет полоски */
+    margin: 40px auto; /* Отступы сверху и снизу, центрирование */
+}
+
+.footer-content {
+    padding: 40px 0 30px; /* Увеличиваем верхний и добавляем нижний отступ */
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-owner {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.footer-newsletter-section {
+    margin-top: 40px;
+    padding-top: 0; /* Удаляем padding-top */
+    /* Удален border-top */
+}
+
+.footer-newsletter-section p {
+    margin-bottom: 15px;
+}
+
+.footer-newsletter-section a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.footer-legal-section {
+    margin-top: 20px; /* Уменьшаем margin-top для юридической информации */
+    font-size: 14px;
+    color: #6a2e2e;
+}
+
+.footer-legal-section p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .menu-icon,
+    .search-icon {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+
+    .artist-name {
+        font-size: 24px;
+    }
+
+    .artist-section {
+        padding: 80px 0;
+    }
+
+    .artist-description {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    footer {
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .footer-stripe {
+        margin: 50px auto;
+    }
+
+    .footer-content {
+        padding: 60px 0 40px;
+    }
+
+    .footer-logo {
+        font-size: 32px;
+    }
+
+    .footer-owner {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .footer-newsletter-section {
+        margin-top: 50px;
+        padding-top: 0; /* Удаляем padding-top */
+        /* Удален border-top */
+    }
+
+    .footer-newsletter-section a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-legal-section {
+        margin-top: 30px; /* Уменьшаем margin-top для юридической информации */
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1400px; /* Увеличиваем максимальную ширину контейнера для очень больших экранов */
+    }
+
+    .header {
+        padding: 25px 0;
+    }
+
+    .logo {
+        font-size: 42px;
+    }
+
+    .menu-icon,
+    .search-icon {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 60px;
+        margin-bottom: 80px;
+    }
+
+    .artist-name {
+        font-size: 28px;
+    }
+
+    .artist-section {
+        padding: 100px 0;
+    }
+
+    .artist-description {
+        font-size: 22px;
+        margin-top: 80px;
+        max-width: 900px;
+    }
+
+    footer {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .footer-stripe {
+        margin: 60px auto;
+    }
+
+    .footer-content {
+        padding: 80px 0 50px;
+    }
+
+    .footer-logo {
+        font-size: 38px;
+    }
+
+    .footer-owner {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .footer-newsletter-section {
+        margin-top: 60px;
+        padding-top: 0; /* Удаляем padding-top */
+        /* Удален border-top */
+    }
+
+    .footer-newsletter-section a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-legal-section {
+        margin-top: 40px; /* Уменьшаем margin-top для юридической информации */
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1920px; /* Увеличиваем максимальную ширину контейнера для очень больших экранов */
+    }
+
+    .header {
+        padding: 25px 0;
+    }
+
+    .logo {
+        font-size: 42px;
+    }
+
+    .menu-icon,
+    .search-icon {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 60px;
+        margin-bottom: 80px;
+    }
+
+    .artist-name {
+        font-size: 28px;
+    }
+
+    .artist-section {
+        padding: 100px 0;
+    }
+
+    .artist-description {
+        font-size: 22px;
+        margin-top: 80px;
+        max-width: 900px;
+    }
+
+    footer {
+        padding: 0 20px;
+        font-size: 22px;
+    }
+
+    .footer-stripe {
+        margin: 70px auto;
+    }
+
+    .footer-content {
+        padding: 100px 0 60px;
+    }
+
+    .footer-logo {
+        font-size: 38px;
+    }
+
+    .footer-owner {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .footer-newsletter-section {
+        margin-top: 60px;
+        padding-top: 0; /* Удаляем padding-top */
+        /* Удален border-top */
+    }
+
+    .footer-newsletter-section a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-legal-section {
+        margin-top: 50px; /* Уменьшаем margin-top для юридической информации */
+        font-size: 20px;
+    }
+}
